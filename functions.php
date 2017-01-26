@@ -35,4 +35,24 @@ function ssp_speakers_single_label_custom ( $label ) {
 /** Suppress displaying speakers inside auto-generated podcast details. **/
 //add_filter( 'ssp_speakers_display', '__return_false' );
 
+/** Change titles of meta boxes 
+    from http://wordpress.stackexchange.com/a/39449
+    and http://wordpress.stackexchange.com/questions/39446/change-the-title-of-a-meta-box
+**/
+function alter_meta_box_titles( $post_type, $priority, $post )
+{
+    global $wp_meta_boxes;
+    echo "<!--priority:${priority},post_type:${post_type}-->";
+
+    // Do check if you're on the right $post_type, $priority, etc.
+    // Then alter the output
+    foreach( $wp_meta_boxes as $index => $box )
+        echo '<!--$wp_meta_boxes[' . $index . '][\'title\']="' . $wp_meta_boxes[$index]['title'] . '"-->';
+//        $wp_meta_boxes[ $index]['title'] = 'CUSTOM TITLE';
+
+    return $wp_meta_boxes;
+}
+add_action( 'do_meta_boxes', 'alter_meta_box_titles', 0, 3);
+
+
 ?>
