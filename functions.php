@@ -47,19 +47,26 @@ function alter_meta_box_titles( $post_type, $priority, $post )
     // Do check if you're on the right $post_type, $priority, etc.
     if( $post_type !== 'podcast' || $priority !== 'normal' ) 
         return $wp_meta_boxes;
-    
+
+    // Change 'Post Attributes' to 'Episode Number'
     if( !empty($wp_meta_boxes['podcast']['side']['core']['pageparentdiv']) ){
         $wp_meta_boxes['podcast']['side']['core']['pageparentdiv']['title'] = 'Episode Number';
     }
-    
-    // Then alter the output
-//    foreach( $wp_meta_boxes as $index => $box )
-//        echo '<!--$wp_meta_boxes[' . $index . '][\'title\']="' . $wp_meta_boxes[$index]['title'] . '"-->';
-//        $wp_meta_boxes[ $index]['title'] = 'CUSTOM TITLE';
 
     return $wp_meta_boxes;
 }
 add_action( 'do_meta_boxes', 'alter_meta_box_titles', 0, 3);
 
+// Hide the Order label for podcasts
+add_action('admin_head', 'custom_admin_css');
+function custom_admin_css() {
+    echo <<<EOM
+<style>
+    body.post-type-podcast p.post-attributes-label-wrapper, body.post-type-podcast label.post-attributes-label {
+        display: none;
+    }
+</style>
+EOM
+}
 
 ?>
