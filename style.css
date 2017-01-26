@@ -10,6 +10,6 @@ Template: 	simple-bootstrap
 
 @import url("../simple-bootstrap/style.css");
 
-body.post-type-podcast p.post-attributes-label-wrapper {
-    display:none;
+body.post-type-podcast p.post-attributes-label-wrapper, body.post-type-podcast label.post-attributes-label {
+    display: none;
 }
