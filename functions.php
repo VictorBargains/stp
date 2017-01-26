@@ -66,7 +66,7 @@ function custom_admin_css() {
         display: none;
     }
 </style>
-EOM
+EOM;
 }
 
 ?>
