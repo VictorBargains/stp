@@ -25,7 +25,7 @@ function query_post_type($query) {
 
 add_filter( 'ssp_speakers_plural_label', 'ssp_speakers_plural_label_custom' );
 function ssp_speakers_plural_label_custom ( $label ) {
-	return 'Contributor';
+	return 'Contributors';
 }
 add_filter( 'ssp_speakers_single_label', 'ssp_speakers_single_label_custom' );
 function ssp_speakers_single_label_custom ( $label ) {
@@ -42,10 +42,16 @@ function ssp_speakers_single_label_custom ( $label ) {
 function alter_meta_box_titles( $post_type, $priority, $post )
 {
     global $wp_meta_boxes;
-    //error_log("priority: ${priority}, post_type: ${post_type}, wp_meta_boxes: " . print_r($wp_meta_boxes, true) );
-    echo '<!--' . "priority: ${priority}, post_type: ${post_type}, wp_meta_boxes: " . print_r($wp_meta_boxes, true) . '-->';
+//    echo '<!--' . "priority: ${priority}, post_type: ${post_type}, wp_meta_boxes: " . print_r($wp_meta_boxes, true) . '-->';
 
     // Do check if you're on the right $post_type, $priority, etc.
+    if( $post_type !== 'podcast' || $priority !== 'normal' ) 
+        return $wp_meta_boxes;
+    
+    if( !empty($wp_meta_boxes['podcast']['side']['core']['pageparentdiv']) ){
+        $wp_meta_boxes['podcast']['side']['core']['pageparentdiv']['title'] = 'Episode Number';
+    }
+    
     // Then alter the output
 //    foreach( $wp_meta_boxes as $index => $box )
 //        echo '<!--$wp_meta_boxes[' . $index . '][\'title\']="' . $wp_meta_boxes[$index]['title'] . '"-->';
