@@ -1,4 +1,8 @@
 <?php
+/*
+show custom post type in archive and term pages from https://wordpress.org/support/topic/custom-post-type-tagscategories-archive-page/?replies=3
+*/
+
 add_filter('pre_get_posts', 'query_post_type');
 function query_post_type($query) {
 //  if(is_category() || is_tag()) {
@@ -12,4 +16,23 @@ function query_post_type($query) {
         return $query;
     }
 }
+
+/*
+ * SERIOUSLY SIMPLE PODCASTING OVERRIDES *
+ */
+
+/** Change 'Speaker(s)' to 'Contributor(s)' **/
+
+add_filter( 'ssp_speakers_plural_label', 'ssp_speakers_plural_label_custom' );
+function ssp_speakers_plural_label_custom ( $label ) {
+	return 'Contributor';
+}
+add_filter( 'ssp_speakers_single_label', 'ssp_speakers_single_label_custom' );
+function ssp_speakers_single_label_custom ( $label ) {
+	return 'Contributor';
+}
+
+/** Suppress displaying speakers inside auto-generated podcast details. **/
+//add_filter( 'ssp_speakers_display', '__return_false' );
+
 ?>
