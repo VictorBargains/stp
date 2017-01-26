@@ -42,7 +42,8 @@ function ssp_speakers_single_label_custom ( $label ) {
 function alter_meta_box_titles( $post_type, $priority, $post )
 {
     global $wp_meta_boxes;
-    error_log("priority: ${priority}, post_type: ${post_type}, wp_meta_boxes: " . print_r($wp_meta_boxes, true) );
+    //error_log("priority: ${priority}, post_type: ${post_type}, wp_meta_boxes: " . print_r($wp_meta_boxes, true) );
+    echo '<!--' . "priority: ${priority}, post_type: ${post_type}, wp_meta_boxes: " . print_r($wp_meta_boxes, true) . '-->';
 
     // Do check if you're on the right $post_type, $priority, etc.
     // Then alter the output
