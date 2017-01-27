@@ -39,8 +39,8 @@
         
         <footer>
             <?php the_tags('<p class="tags">', ' ', '</p>'); ?>
-              <?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
             <ul class="post_footer_meta meta text-muted list-inline">
+              <?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
         <li>
             <?php
                 $sp = '<span class="glyphicon glyphicon-comment"></span> ';

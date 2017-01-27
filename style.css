@@ -37,11 +37,14 @@ header.featured-bg .featured-image {
 article.featured-bg {
     padding: 0px;
 }
-article.featured-bg .post_content {
-    background-color: rgba(255, 255, 255, 0.5);
+article.featured-bg .post_content, article.featured-bg footer {
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 0px;
     padding: 0px;
 /*    padding: 2px 20px 4px 20px;*/
+}
+article.featured-bg footer .tags {
+    padding: 2px 4px 2px 4px;
 }
 #main article.featured-bg ul.meta {
     text-align: right;
@@ -61,9 +64,9 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
 #main article.featured-bg .article-header h2, #main article.featured-bg .article-header h2.h1 {
     padding: 10px 20px 10px 20px;
 }
-article.featured-bg footer ul.post_footer_meta {
+#main article.featured-bg footer ul.meta.post_footer_meta {
     text-align: right;
     background-color: rgb(0, 0, 0, 0.5);
-    padding: 2px 20px 4px 20px;
+    padding: 2px 4px 4px 4px;
     width: 100%;
 }
