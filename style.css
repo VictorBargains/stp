@@ -14,7 +14,7 @@ Template: 	simple-bootstrap
     background-repeat: no-repeat;
 /*    background-attachment: fixed;*/
     background-position: 50% 10%;
-    background-size: auto;
+    background-size: cover;
     
 }
 
