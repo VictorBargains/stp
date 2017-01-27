@@ -1,6 +1,19 @@
 <ul class="meta text-muted list-inline">
+    <?php
+$term_list = wp_get_post_terms( $post->ID, 'series', array( 'fields' => 'all' ) );
+    if( !empty($term_list) ):
+    ?><li><?php
+    for( $term in $term_list ){
+    ?><a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a> 
+    <?php } ?>
+    ?></li>
+    <?php endif ?>
+    
         <li>
             <a href="<?php the_permalink() ?>">
+                <?php if ($post->menu_order > 0): ?>
+                Episode #<?php echo $post->menu_order;?>
+                <?php endif ?>
                 <span class="glyphicon glyphicon-time"></span>
                 <?php the_date(); ?>
             </a>

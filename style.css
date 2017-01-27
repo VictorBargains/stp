@@ -20,9 +20,9 @@ Template: 	simple-bootstrap
 
 .featured-bg .article-header h2, .featured-bg .article-header h2.h1 {
     width: 100%;
-    margin: 0px;
-    padding: 0px 0px 4px 0px;
-/*    background-color: rgba(0,0,0,0.7);*/
+    margin: 0px 0px 100px 0px;
+    padding: 0px;
+    background-color: rgba(0,0,0,0.5);
     color: #ffffff;
     font-weight: 900;
 }
@@ -34,6 +34,6 @@ Template: 	simple-bootstrap
 header.featured-bg .featured-image {
      max-height: 400px;
 }
-artielc.featured-bg .post_content {
-    background-color: rgba(255, 255, 255, 0.4);
+article.featured-bg .post_content {
+    background-color: rgba(255, 255, 255, 0.5);
 }
