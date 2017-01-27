@@ -34,6 +34,23 @@ Template: 	simple-bootstrap
 header.featured-bg .featured-image {
      max-height: 400px;
 }
+article.featured-bg {
+    padding: 0px;
+}
 article.featured-bg .post_content {
     background-color: rgba(255, 255, 255, 0.5);
+    margin: 0px;
+    padding: 2px 20px 4px 20px;
+}
+article.featured-bg .article-header h2 {
+    padding: 10px 20px 10px 20px;
+}
+article.featured-bg ul.meta {
+    text-align: right;
+    width: 100%;
+    margin: 0px;
+    padding: 2px 20px 2px 20px;
+}
+article.featured-bg footer ul.post_footer_meta {
+    text-align: right;
 }
