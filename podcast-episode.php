@@ -41,3 +41,4 @@
         <footer>
             <?php the_tags('<p class="tags">', ' ', '</p>'); ?>
         </footer>
+</article>
