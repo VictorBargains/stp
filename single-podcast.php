@@ -7,7 +7,7 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
         <?php $multiple_on_page = false; ?>
-        <?php include(get_template_directory() . "podcast-episode.php"); ?>
+        <?php include(get_stylesheet_directory() . "/podcast-episode.php"); ?>
 		
 		<?php comments_template('',true); ?>
 		
