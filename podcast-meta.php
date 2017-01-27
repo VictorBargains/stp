@@ -2,7 +2,7 @@
     <?php $term_list = wp_get_post_terms( $post->ID, 'series', array( 'fields' => 'all' ) ); ?>
     <?php if( !empty($term_list) ){ ?>
         <li>
-        <?php for( $term in $term_list ){ ?>
+        <?php foreach( $term_list as $term ){ ?>
             <a href="<?php echo get_term_link($term); ?>"><?php echo $term->name; ?></a> 
         <?php } ?>
         </li>
