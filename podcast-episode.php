@@ -23,7 +23,7 @@
             </div>
             <?php } ?>
 
-            <?php include(get_template_directory_uri() . "podcast-meta.php"); ?>
+            <?php include(get_template_directory() . "podcast-meta.php"); ?>
         
         </header>
     
