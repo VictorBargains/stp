@@ -1,6 +1,9 @@
 <?php global $multiple_on_page; ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class("block"); ?> role="article"
-    <?php if(has_post_thumbnail() && $multiple_on_page): ?> class="featured-bg" style="background-image: url(<?php echo the_post_thumbnail_url('simple_bootstrap_featured');?>);"
+<article id="post-<?php the_ID(); ?>" role="article"
+    <?php if(has_post_thumbnail() && $multiple_on_page): ?>  
+         <?php post_class("block featured-bg"); ?>  style="background-image: url(<?php echo the_post_thumbnail_url('simple_bootstrap_featured'); ?>);"
+     <?php else: ?>
+          <?php post_class("block"); ?> 
     <?php endif ?> 
          >
     <header>
@@ -14,7 +17,7 @@
             </div>
             <?php endif ?>
 
-            <?php if (has_post_thumbnail()) { ?>
+            <?php if (has_post_thumbnail() && !$multiple_on_page) { ?>
             <div class="featured-image">
                 <?php the_post_thumbnail('simple_boostrap_featured'); ?>
             </div>
