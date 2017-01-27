@@ -13,7 +13,7 @@
                 $multiple_on_page = true;
                 include(get_stylesheet_directory() . '/podcast-episode.php');
             } else {
-                simple_boostrap_display_post(true);
+                simple_boostrap_display_post(false);
             }
          ?>
 		

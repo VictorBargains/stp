@@ -9,8 +9,6 @@
         <?php $multiple_on_page = false; ?>
         <?php include(get_stylesheet_directory() . "/podcast-episode.php"); ?>
 		
-		<?php comments_template('',true); ?>
-		
 		<?php if (get_next_post() || get_previous_post()) { ?>
 		<nav class="block">
 			<ul class="pager pager-unspaced">
@@ -19,6 +17,8 @@
 			</ul>
 		</nav>
 		<?php } ?>
+		
+		<?php comments_template('',true); ?>
 		
 		<?php endwhile; ?>			
 		
