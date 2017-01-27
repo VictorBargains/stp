@@ -10,19 +10,27 @@ Template: 	simple-bootstrap
 
 @import url("../simple-bootstrap/style.css");
 
-header.featured-bg {
-    min-height: 250px;
-    max-height: 350px;
+.featured-bg {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
+    background-position: 50% 10%;
     background-size: cover;
     
 }
-header.featured-bg .article-header {
+
+.featured-bg .article-header h2, .featured-bg .article-header h2.h1 {
     width: 100%;
     margin: 0px;
     padding: 10px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.7);
     color: #ffffff;
+    font-weight: 900;
+}
+
+.featured-bg .featured-image {
+    display: hidden;
+    position: absolute;
+}
+header.featured-bg .featured-image {
+     max-height: 400px;
 }
