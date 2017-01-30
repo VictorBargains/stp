@@ -48,8 +48,7 @@ article.featured-bg .post_content {
 article.featured-bg .post_content p {
     background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 0px;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    padding: 0.3em; 20px;
 }
 article.featured-bg footer .tags {
     padding: 0px 4px 2px 4px;
@@ -64,9 +63,8 @@ article.featured-bg .post_content .podcast_player {
     width: 100%;
     margin: 0px;
 }
-article.featured-bg .post_content .podcast_meta, article.featured-bg .post_content p {
+article.featured-bg .post_content .podcast_meta {
     padding: 0px 20px 0px 20px;
-
 }
 .featured-bg .podcast_meta a {
     font-weight: 700;
