@@ -41,10 +41,12 @@ article.featured-bg {
     padding: 0px;
 }
 article.featured-bg .post_content {
-    background-color: rgba(255, 255, 255, 0.8);
     margin: 0px;
     padding: 0px;
 /*    padding: 2px 20px 4px 20px;*/
+}
+article.featured-bg .post_content p {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 article.featured-bg footer .tags {
     padding: 0px 4px 2px 4px;
@@ -54,7 +56,6 @@ article.featured-bg footer .tags {
     width: 100%;
     margin: 0px;
     padding: 2px 2px 2px 4px;
-    background-color: rgba(34, 34, 34, 0.8);
 }
 article.featured-bg .post_content .podcast_player {
     width: 100%;
