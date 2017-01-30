@@ -23,7 +23,6 @@
             </div>
             <?php } ?>
 
-            <?php include(get_stylesheet_directory() . "/podcast-meta.php"); ?>
         </header>
     
         <section class="post_content">
@@ -38,6 +37,7 @@
         </section>
         
         <footer>
+            <?php include(get_stylesheet_directory() . "/podcast-meta.php"); ?>
             <?php the_tags('<p class="tags">', ' ', '</p>'); ?>
             <ul class="post_footer_meta meta text-muted list-inline">
               <?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
