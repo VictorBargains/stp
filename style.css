@@ -18,7 +18,7 @@ Template: 	simple-bootstrap
     
 }
 
-.featured-bg .article-header h2, .featured-bg .article-header h2.h1 {
+.featured-bg .article-header h2, .featured-bg .article-header h2.h1, .featured-bg .article-header h1 {
     width: 100%;
     margin: 0px 0px 100px 0px;
     padding: 0px;
