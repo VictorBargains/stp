@@ -33,9 +33,28 @@ function filter_podcast_details($meta, $episode_id, $context){
  */
 function sticky_widgets_init() {
 	register_sidebar( array(
-		'name'          => 'Sticky Sidebar (Above Posts)',
+		'name'          => 'Sticky Sidebar (1 Column)',
+        'description'   => 'Displays 1 vertical column above posts.'
 		'id'            => 'home_sticky_1',
-		'before_widget' => '<div>',
+		'before_widget' => '<div class="col-xs-6">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Sticky Sidebar (2 Columns)',
+        'description'   => 'Displays 2 vertical columns above posts.'
+		'id'            => 'home_sticky_2',
+		'before_widget' => '<div class="col-xs-6">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Sticky Sidebar (1 Column)',
+        'description'   => 'Displays 1 vertical column above posts.'
+		'id'            => 'home_sticky_1',
+		'before_widget' => '<div class="col-xs-6">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="rounded">',
 		'after_title'   => '</h2>',
