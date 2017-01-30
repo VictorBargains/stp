@@ -14,14 +14,14 @@
             <?php endif; ?>                        
             <?php if( is_active_sidebar( 'home_sticky_2') || is_active_sidebar( 'home_sticky_3' ) ): ?>
                 <div class="row">
-                    <div id="sticky-sidebar-2" class="sticky-sidebar widget-area col-xs-6" role="complementary">
+                    <div id="sticky-sidebar-2" class="sticky-sidebar widget-area col-xs-12 col-sm-6" role="complementary">
                         <div class="row">
                             <?php if( is_active_sidebar( 'home_sticky_2') ): ?>
                             <?php dynamic_sidebar( 'home_sticky_2' ); ?>
                             <?php endif; ?>
                         </div>
                     </div><!-- #sticky-sidebar-2 --> 
-                    <div id="sticky-sidebar-3" class="sticky-sidebar widget-area col-xs-6" role="complementary">
+                    <div id="sticky-sidebar-3" class="sticky-sidebar widget-area col-xs-12 col-sm-6" role="complementary">
                         <div class="row">
                             <?php if( is_active_sidebar( 'home_sticky_3') ): ?>
                             <?php dynamic_sidebar( 'home_sticky_3' ); ?>
