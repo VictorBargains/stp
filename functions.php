@@ -21,10 +21,28 @@ function query_post_type($query) {
  * SERIOUSLY SIMPLE PODCASTING OVERRIDES *
  */
 
-add_filter( 'wp_episode_meta_details', 'filter_podcast_details' );
+/*add_filter( 'wp_episode_meta_details', 'filter_podcast_details' );
 function filter_podcast_details($meta, $episode_id, $context){
     return 'METADATA';
+}*/
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function sticky_widgets_init() {
+	register_sidebar( array(
+		'name'          => 'Sticky Sidebar (Above Posts)',
+		'id'            => 'home_sticky_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
 }
+add_action( 'widgets_init', 'sticky_widgets_init' );
 
 
 /** Change 'Speaker(s)' to 'Contributor(s)' **/

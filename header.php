@@ -1,5 +1,8 @@
 <!doctype html>  
-
+<?php 
+    $collapse_nav = false;
+    $sticky_widgets = true;
+?>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -18,11 +21,23 @@
 				<div class="container">
 		  
 					<div class="navbar-header">
+						<?php if ($collapse_nav && has_nav_menu("main_nav")): ?>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-responsive-collapse">
+		    				<span class="sr-only"><?php _e('Navigation', 'simple-bootstrap'); ?></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<?php endif ?>
+						<a class="navbar-brand" title="<?php bloginfo('description'); ?>" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+					</div>
+
 					<?php if (has_nav_menu("main_nav")): ?>
-					<div id="navbar-main" class="navbar-nav">
+					<div id="navbar-responsive-collapse" class="<?php if( $collapse_nav ){ ?>collapse navbar-collapse<? } else { ?>navbar-nav<? }?>">
 						<?php
 						    simple_bootstrap_display_main_menu();
 						?>
+
 					</div>
 					<?php endif ?>
 
@@ -45,3 +60,9 @@
 		
 		<div id="page-content">
 			<div class="container">
+                
+            <?php if ( is_active_sidebar( 'home_sticky_1' ) ) : ?>
+                <div id="sticky-sidebar" class="sticky-sidebar widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'home_sticky_1' ); ?>
+                </div><!-- #sticky-sidebar -->
+            <?php endif; ?>
