@@ -20,7 +20,7 @@ Template: 	simple-bootstrap
 
 .featured-bg .article-header h2, .featured-bg .article-header h2.h1, .featured-bg .article-header h1 {
     width: 100%;
-    margin: 0px 0px 100px 0px;
+    margin: 0px 0px 140px 0px;
     padding: 2px 1px 3px 0.2em;
     background-color: rgba(0,0,0,0.5);
     color: #ffffff;
@@ -54,7 +54,7 @@ article.featured-bg footer .tags {
     width: 100%;
     margin: 0px;
     padding: 2px 2px 2px 4px;
-    background-color: rgb(34, 34, 34);
+    background-color: rgba(34, 34, 34, 0.8);
 }
 article.featured-bg .post_content .podcast_player {
     width: 100%;
@@ -64,15 +64,21 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
     padding: 0px 20px 0px 20px;
 
 }
-#main article.featured-bg footer ul.meta.post_footer_meta {
+#main article.featured-bg footer .post_footer_meta {
     text-align: right;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 2px 4px 4px 4px;
     width: 100%;
 }
-.featured-bg .podcast_meta, .featured-bg footer .tags {
-    background-color: rgba(0, 0, 0, 0.5);    
+.featured-bg .podcast_meta, .featured-bg footer {
+    background-color: rgba(34, 34, 34, 0.8);
     color: #ffffff;
+}
+.featured-bg p.tags {
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+}
+.featured-bg p.tags a {
+    margin-bottom: 2px;
 }
 .tagcloud a, .tagcloud a:visited {
     padding: .1em .3em .1em;
