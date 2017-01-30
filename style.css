@@ -48,8 +48,8 @@ article.featured-bg .post_content {
 article.featured-bg .post_content p {
     background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 0px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
 }
 article.featured-bg footer .tags {
     padding: 0px 4px 2px 4px;
@@ -85,7 +85,7 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
     margin: 0px;
     padding: 0px;
 }
-.featured-bg .tag-label {
+.featured-bg p.tags .tag-label {
     display: inline-block;
     float: left;
     padding-right: 5px;
@@ -95,6 +95,7 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
 .featured-bg p.tags {
     margin-bottom: 0px;
     padding-bottom: 2px;
+    padding-left: 0px;
 }
 .featured-bg p.tags a {
     margin-bottom: 2px;
