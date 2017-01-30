@@ -8,7 +8,9 @@
             <?php if ( is_active_sidebar( 'home_sticky_1' ) ) : ?>
                 <div class="row">
                     <div id="sticky-sidebar-1" class="sticky-sidebar widget-area col-xs-12" role="complementary">
-                        <?php dynamic_sidebar( 'home_sticky_1' ); ?>
+                        <div class="row">
+                            <?php dynamic_sidebar( 'home_sticky_1' ); ?>
+                        </div>
                     </div><!-- #sticky-sidebar-1 -->
                 </div>
             <?php endif; ?>                        
