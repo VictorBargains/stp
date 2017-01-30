@@ -37,7 +37,7 @@
         </section>
         
         <footer>
-            <?php the_tags('<p class="tags"><label class="tag-label">Topics: </label>', ' ', '</p>'); ?>
+            <?php the_tags('<p class="tags"><span class="tag-label">Topics: </span>', ' ', '</p>'); ?>
             <?php include(get_stylesheet_directory() . "/podcast-meta.php"); ?>
             <ul class="post_footer_meta meta text-muted list-inline">
               <?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>

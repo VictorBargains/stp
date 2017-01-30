@@ -90,6 +90,7 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
     float: left;
     padding-right: 5px;
     padding-bottom: 2px;
+    padding-left: 20px;
 }
 .featured-bg p.tags {
     margin-bottom: 0px;
