@@ -61,7 +61,7 @@
 		<div id="page-content">
 			<div class="container">
             <?php if( is_active_sidebar('home_sticky_2') || is_active_sidebar('home_sticky_3') || is_active_sidebar('home_sticky_1') ): ?>
-                <div class="block sticky-widgets">
+                <div class="block sticky-widgets <?php echo simple_boostrap_main_classes(); ?>">
                 <?php if ( is_active_sidebar( 'home_sticky_1' ) ) : ?>
                     <div class="row">
                         <div id="sticky-sidebar-1" class="sticky-sidebar widget-area col-xs-12" role="complementary">
