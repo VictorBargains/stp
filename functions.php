@@ -21,6 +21,12 @@ function query_post_type($query) {
  * SERIOUSLY SIMPLE PODCASTING OVERRIDES *
  */
 
+add_filter( 'wp_episode_meta_details', 'filter_podcast_details' );
+function filter_podcast_details($meta, $episode_id, $context){
+    return 'METADATA';
+}
+
+
 /** Change 'Speaker(s)' to 'Contributor(s)' **/
 
 add_filter( 'ssp_speakers_plural_label', 'ssp_speakers_plural_label_custom' );
