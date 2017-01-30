@@ -26,6 +26,9 @@ Template: 	simple-bootstrap
     color: #ffffff;
     font-weight: 900;
 }
+.single-podcast .featured-bg .article-header h1, .single-podcast .featured-bg .article-header h2 {
+    margin-bottom: 250px;
+}
 
 .featured-bg .featured-image {
     display: hidden;
@@ -61,14 +64,15 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
     padding: 0px 20px 0px 20px;
 
 }
-#main article.featured-bg .article-header h2, #main article.featured-bg .article-header h2.h1 {
-    padding: 10px 20px 10px 20px;
-}
 #main article.featured-bg footer ul.meta.post_footer_meta {
     text-align: right;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 2px 4px 4px 4px;
     width: 100%;
+}
+.featured-bg .podcast_meta, .featured-bg footer .tags {
+    background-color: rgba(0, 0, 0, 0.5);    
+    color: #ffffff;
 }
 .tagcloud a, .tagcloud a:visited {
     padding: .1em .3em .1em;
