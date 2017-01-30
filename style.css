@@ -70,7 +70,7 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
     padding: 2px 4px 4px 4px;
     width: 100%;
 }
-.tagcloud a {
+.tagcloud a, .tagcloud a:visited {
     padding: .1em .3em .1em;
     font-size: 75%;
     font-weight: bold;
@@ -81,4 +81,7 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
     border-radius: 0;
     background-color: inherit;
     white-space: normal;
+}
+.tagcloud a:hover, .tagcloud a:active {
+    color: #ffffff;
 }
