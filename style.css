@@ -91,3 +91,7 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
 .widget_sp_widget_post_slider {
     margin-bottom: 0px;
 }
+.widget-post-slider .wps-caption {
+    bottom: inherit;
+    top: 0;
+}
