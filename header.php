@@ -1,7 +1,6 @@
 <!doctype html>  
 <?php 
-    $collapse_nav = false;
-    $sticky_widgets = true;
+    $collapse_nav = true;
 ?>
 <html <?php language_attributes(); ?>>
 <head>
