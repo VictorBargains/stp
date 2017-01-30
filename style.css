@@ -99,3 +99,6 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
     bottom: inherit;
     top: 0;
 }
+.widget-post-slider img {
+    max-height: 185px;
+}
