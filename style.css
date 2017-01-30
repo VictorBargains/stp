@@ -88,6 +88,6 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
 .widget {
     margin-bottom: 20px;
 }
-.widget_sp_widget_post_slider+.widget {
+.widget_sp_widget_post_slider {
     margin-bottom: 0px;
 }
