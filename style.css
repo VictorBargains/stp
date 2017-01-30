@@ -40,7 +40,7 @@ header.featured-bg .featured-image {
 article.featured-bg {
     padding: 0px;
 }
-article.featured-bg .post_content, article.featured-bg footer {
+article.featured-bg .post_content {
     background-color: rgba(255, 255, 255, 0.8);
     margin: 0px;
     padding: 0px;
@@ -76,6 +76,10 @@ article.featured-bg .post_content .podcast_meta, article.featured-bg .post_conte
 .featured-bg .podcast_meta, .featured-bg footer {
     background-color: rgba(34, 34, 34, 0.8);
     color: #ffffff;
+}
+.featured-bg footer {
+    margin: 0px;
+    padding: 0px;
 }
 .featured-bg p.tags {
     margin-bottom: 0px;
