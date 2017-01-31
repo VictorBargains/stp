@@ -123,20 +123,6 @@ article.featured-bg .post_content .podcast_meta {
     max-height: 185px;
     overflow: hidden;
 }
-.mejs-controls .mejs-button button.playpause-cloned {
-    cursor: pointer;
-    display: block;
-    line-height: 0;
-    text-decoration: none;
-    padding: 0;
-    position: absolute;
-    border: 0;
-    background: transparent url(controls.svg) no-repeat;
-    width: 100%;
-    font-size: 400%;
-    margin-top: -200px;
-    text-align: center;
-}
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 0px;
 }

@@ -18,7 +18,7 @@
                     setTimeout(callback, 10);
                 }
             }
-            callback();
+//            callback();
         });     
     });
 })(jQuery);

@@ -39,18 +39,6 @@
         </section>
         
         <footer>
-            <?php the_tags('<p class="tags"><span class="tag-label">Topics: </span>', ' ', '</p>'); ?>
             <?php include(get_stylesheet_directory() . "/podcast-meta.php"); ?>
-            <ul class="post_footer_meta meta text-muted list-inline">
-              <?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
-        <li>
-            <?php
-                $sp = '<span class="glyphicon glyphicon-comment"></span> ';
-                comments_popup_link($sp . __( 'Leave a comment', "simple-bootstrap"), $sp . __( '1 Comment', "simple-bootstrap"), $sp . __( '% Comments', "simple-bootstrap"));
-            ?>
-        </li>
-        <?php endif; ?>
-        <?php edit_post_link(__( 'Edit', "simple-bootstrap"), '<li><span class="glyphicon glyphicon-pencil"></span> ', '</li>'); ?>
-            </ul>
         </footer>
 </article>
