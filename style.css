@@ -119,7 +119,7 @@ article.featured-bg .post_content .podcast_meta {
     bottom: inherit;
     top: 0;
 }
-.widget-post-slider, .slick-slider {
+.widget-post-slider, .sp-widget-post-slider-section {
     max-height: 185px;
     overflow: hidden;
 }
