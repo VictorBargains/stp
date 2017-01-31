@@ -136,3 +136,6 @@ article.featured-bg .post_content .podcast_meta {
     margin-top: -200px;
     text-align: center;
 }
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+}
