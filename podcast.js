@@ -1,19 +1,24 @@
 (function($) {
     $(document).ready(function(){
-        var $p_container = $('.podcast_player');
-        $p_container.each(function(i, el){
+        var $p_player = $('.podcast_player');
+        $p_player.each(function(i, el){
             var callback;
             callback = function(){
-                if( typeof mejs == 'undefined' ){
-                    setTimeout(callback, 10);
-                } else {
-                    var $el = $(el),
-                        $clone = $el.find('.mejs-playpause-button button')
-                        .clone(true)
+                var $el = $(el),
+                    $p_btn = $el.find('.mejs-playpause-button button'),
+                    $clone
+                ;
+                if( $p_btn.length ) {
+                    
+                        $clone = $p_btn.clone(true)
                         .addClass('playpause-cloned')
                         .appendTo($el.closest('article')
                             .find('header')
                         );
+
+                }
+                else {
+                    setTimeout(callback, 10);
                 }
             }
             callback();
