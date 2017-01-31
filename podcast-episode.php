@@ -1,13 +1,15 @@
-<?php global $multiple_on_page; ?>
+<?php global $multiple_on_page;
+    $feature_bg = false;
+?>
 <article id="post-<?php the_ID(); ?>" role="article"
-    <?php if(has_post_thumbnail()/* && $multiple_on_page*/): ?>  
+    <?php if(has_post_thumbnail() && $feature_bg): ?>  
          <?php post_class("block featured-bg"); ?>  style="background-image: url(<?php echo the_post_thumbnail_url('simple_bootstrap_featured'); ?>);"
      <?php else: ?>
           <?php post_class("block"); ?> 
     <?php endif ?> 
          >
     <header>
-            <?php if ($multiple_on_page /*disabling:*/&& false) : ?>
+            <?php if (!$feature_bg) : ?>
             <div class="article-header">
                 <h2 class="h1"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
             </div>
@@ -17,7 +19,7 @@
             </div>
             <?php endif ?>
 
-            <?php if (has_post_thumbnail() && /*!$multiple_on_page*/false) { ?>
+            <?php if (has_post_thumbnail() && $feature_bg) { ?>
             <div class="featured-image">
                 <?php the_post_thumbnail('simple_boostrap_featured'); ?>
             </div>
