@@ -122,3 +122,10 @@ article.featured-bg .post_content .podcast_meta {
 .widget-post-slider {
     max-height: 185px;
 }
+.playpause-cloned {
+    position: absolute;
+    width: 100%;
+    font-size: 400%;
+    margin-top: -200px;
+    text-align: center;
+}

@@ -9,12 +9,9 @@
                     $clone
                 ;
                 if( $p_btn.length ) {
-                    
                         $clone = $p_btn.clone(true)
                         .addClass('playpause-cloned')
-                        .appendTo($el.closest('article')
-                            .find('header')
-                        );
+                        .insertAfter($p_btn);
 
                 }
                 else {
