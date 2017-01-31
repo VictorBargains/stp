@@ -73,6 +73,16 @@ function sticky_widgets_init() {
 }
 add_action( 'widgets_init', 'sticky_widgets_init' );
 
+function podcast_extension_scripts() { 
+    // For child themes
+    wp_register_script( 'podcast-extensions', 
+        get_stylesheet_directory_uri() . '/podcast.js', 
+        array('jquery'), 
+        null );
+    wp_enqueue_script('podcast-extensions');
+
+}
+add_action( 'wp_enqueue_scripts', 'podcast_extension_scripts' );
 
 /** Change 'Speaker(s)' to 'Contributor(s)' **/
 
