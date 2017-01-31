@@ -119,6 +119,6 @@ article.featured-bg .post_content .podcast_meta {
     bottom: inherit;
     top: 0;
 }
-.sticky-sidebar .widget-post-slider {
+.widget-post-slider {
     max-height: 185px;
 }
