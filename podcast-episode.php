@@ -19,7 +19,7 @@
             </div>
             <?php endif ?>
 
-            <?php if (has_post_thumbnail() && $feature_bg) { ?>
+            <?php if (has_post_thumbnail() && !$feature_bg) { ?>
             <div class="featured-image">
                 <?php the_post_thumbnail('simple_boostrap_featured'); ?>
             </div>
