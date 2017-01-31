@@ -1,4 +1,4 @@
-$(document.ready(function(){
+$(document).ready(function(){
     var $p_container = $('.podcast_player mejs-playpause-button');
     $p_container.each(function(i, el){
         var $el = $(el),
