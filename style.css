@@ -121,6 +121,7 @@ article.featured-bg .post_content .podcast_meta {
 }
 .widget-post-slider, .sp-widget-post-slider-section {
     max-height: 185px;
+    max-width: 82vw;
     overflow: hidden;
 }
 #sticky-sidebar-1 h2, article h2.h1 {
