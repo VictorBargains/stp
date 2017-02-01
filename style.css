@@ -114,7 +114,9 @@ article.featured-bg .post_content .podcast_meta {
 }
 .widget_sp_widget_post_slider {
     margin-bottom: 0px;
-        max-width: 354px;
+}
+.sp-widget-post-slider-section {
+    max-width: 354px;
 }
 .widget-post-slider .wps-caption {
     bottom: inherit;
@@ -134,9 +136,6 @@ article.featured-bg .post_content .podcast_meta {
 /* all phones up to 6 plus (in portrait mode) */
 @media only screen and (max-width : 414px) {
     
-    .widget_sp_widget_post_slider {
-    }
-
     #sticky-sidebar-2, #sticky-sidebar-3 {
         width: 100%;
     }
