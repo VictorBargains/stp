@@ -121,9 +121,26 @@ article.featured-bg .post_content .podcast_meta {
 }
 .widget-post-slider {
     max-height: 185px;
-    max-width: 82vw;
     overflow: hidden;
 }
 #sticky-sidebar-1 h2, article h2.h1 {
     margin-top: 0px;
+}
+
+#sticky-sidebar-2, #sticky-sidebar-3 {
+    float: left;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* all phones up to 6 plus (in portrait mode) */
+@media only screen and (max-width : 414px) {
+    
+    #sticky-sidebar-2, #sticky-sidebar-3 {
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+    
 }
