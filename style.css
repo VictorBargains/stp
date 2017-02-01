@@ -121,7 +121,6 @@ article.featured-bg .post_content .podcast_meta {
 }
 .widget-post-slider {
     max-height: 185px;
-    max-width: 354px;
     overflow: hidden;
 }
 #sticky-sidebar-1 h2, article h2.h1 {
@@ -135,7 +134,7 @@ article.featured-bg .post_content .podcast_meta {
 @media only screen and (max-width : 414px) {
     
     .widget_sp_widget_post_slider {
-
+        max-width: 354px;
     }
 
     #sticky-sidebar-2, #sticky-sidebar-3 {
