@@ -26,7 +26,7 @@
 		
 		<?php endwhile; ?>	
 		
-		<?php simple_boostrap_page_navi(); ?>	
+		<?php stp_page_navi(); ?>	
 		
 		<?php else : ?>
 		

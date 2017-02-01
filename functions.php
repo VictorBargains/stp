@@ -135,7 +135,7 @@ EOM;
 }
 
 
-function simple_boostrap_page_navi() {
+function stp_page_navi() {
     global $wp_query;
     ?>
 
