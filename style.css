@@ -114,6 +114,7 @@ article.featured-bg .post_content .podcast_meta {
 }
 .widget_sp_widget_post_slider {
     margin-bottom: 0px;
+        max-width: 354px;
 }
 .widget-post-slider .wps-caption {
     bottom: inherit;
@@ -134,7 +135,6 @@ article.featured-bg .post_content .podcast_meta {
 @media only screen and (max-width : 414px) {
     
     .widget_sp_widget_post_slider {
-        max-width: 354px;
     }
 
     #sticky-sidebar-2, #sticky-sidebar-3 {
