@@ -142,8 +142,8 @@ function simple_boostrap_page_navi() {
     <?php if (get_next_posts_link() || get_previous_posts_link()) { ?>
         <nav class="block">
             <ul class="pager pager-unspaced">
-                <li class="previous"><?php next_posts_link("&laquo; " . __((is_post_type_archive('podcast')?:'Older Episodes', 'Older posts'), "simple-bootstrap")); ?></li>
-                <li class="next"><?php previous_posts_link(__((is_post_type_archive('podcast')?:'Newer Episodes', 'Newer posts'), "simple-bootstrap") . " &raquo;"); ?></li>
+                <li class="previous"><?php next_posts_link("&laquo; " . __((is_post_type_archive('podcast')? 'Older Episodes': 'Older posts'), "simple-bootstrap")); ?></li>
+                <li class="next"><?php previous_posts_link(__((is_post_type_archive('podcast')? 'Newer Episodes': 'Newer posts'), "simple-bootstrap") . " &raquo;"); ?></li>
             </ul>
         </nav>
     <?php } ?>
