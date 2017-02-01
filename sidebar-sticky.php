@@ -1,3 +1,4 @@
+<?php $use_bootstrap = true; ?>
 <?php if( is_active_sidebar('home_sticky_2') || is_active_sidebar('home_sticky_3') || is_active_sidebar('home_sticky_1') ): ?>
     <div class="block sticky-widgets">
     <?php if ( is_active_sidebar( 'home_sticky_1' ) ) : ?>
