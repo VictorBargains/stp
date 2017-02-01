@@ -128,10 +128,6 @@ article.featured-bg .post_content .podcast_meta {
 }
 
 #sticky-sidebar-2, #sticky-sidebar-3 {
-    float: left;
-    width: 50%;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 /* all phones up to 6 plus (in portrait mode) */
