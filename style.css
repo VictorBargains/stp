@@ -26,6 +26,9 @@ Template: 	simple-bootstrap
     color: #ffffff;
     font-weight: 900;
 }
+.article-header h2.h1 {
+    font-size: 28px;
+}
 .single-podcast .featured-bg .article-header h1, .single-podcast .featured-bg .article-header h2 {
     margin-bottom: 250px;
 }
@@ -132,6 +135,7 @@ article.featured-bg .post_content .podcast_meta {
 
 #sticky-sidebar-2, #sticky-sidebar-3 {
 }
+
 
 /* all phones up to 6 plus (in portrait mode) */
 @media only screen and (max-width : 414px) {
