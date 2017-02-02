@@ -4,19 +4,20 @@
         ,   $a = $el.closest('a')
         ,   $player = $el.closest('article').find('.podcast_player')
         ,   $btn = $player.find('.mejs-playpause-button button')
-        ,   $title 
         ;
         if( $btn.length ){
             $btn.click();
-            $title = $btn.attr('title');
-            // Copy title
-            $a.attr('title', $title);
-            // Copy play/pause icon
-            if( $title == 'Pause' ){
-                $a.find('.playpause-button').removeClass('glyphicon-play').addClass('glyphicon-pause');
-            } else {
-                $a.find('.playpause-button').removeClass('glyphicon-pause').addClass('glyphicon-play');
-            }
+            setTimeout(function(){
+                var $title = $btn.attr('title');
+                // Copy title
+                $a.attr('title', $title);
+                // Copy play/pause icon
+                if( $title == 'Pause' ){
+                    $a.find('.playpause-button').removeClass('glyphicon-play').addClass('glyphicon-pause');
+                } else {
+                    $a.find('.playpause-button').removeClass('glyphicon-pause').addClass('glyphicon-play');
+                }
+            }, 10);
 
         }
 
