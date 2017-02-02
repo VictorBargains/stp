@@ -19,14 +19,14 @@ Template: 	simple-bootstrap
     top: 50%;
     margin-top: -40px;
     
-    margin-top: -40px; /* half icon's height */
+    margin-top: -50px; /* half icon's height */
     left: 50%;
-    margin-left: -40px; /* half icon's width */
+    margin-left: -50px; /* half icon's width */
     z-index: 999;
-    font-size: 80px;
+    font-size: 100px;
     width: 100%;
     color: #ffffff;
-    opacity: .75;
+    opacity: .55;
 }
 .playpause-button:hover .glyphicon {
     opacity: 1;
