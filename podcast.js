@@ -3,7 +3,7 @@
         var $el = $(e.target)
         ,   $player = $el.closest('.podcast_player')
         ,   $btn = $player.find('.mejs-playpause-button button')
-        ,   $title = $btn.attr('title')
+        ,   $title = $btn.prop('title')
         ;
         if( $btn.length ){
             $btn.click();
