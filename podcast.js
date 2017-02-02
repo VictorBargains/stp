@@ -2,7 +2,7 @@
     function playPauseAudioPlayer(e){
         var $el = $(e.target)
         ,   $player = $el.closest('.podcast_player')
-        ,   $btn = $player.find('.mejs-playpause-button')
+        ,   $btn = $player.find('.mejs-playpause-button button')
         ,   $title = $btn.attr('title')
         ;
         if( $btn.length ){
