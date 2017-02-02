@@ -10,6 +10,78 @@ Template: 	simple-bootstrap
 
 @import url("../simple-bootstrap/style.css");
 
+/* Media Player */
+.playpause.featured-image {
+    display: table;
+}
+.playpause-button.glyphicon {
+    position: absolute;
+    display: table-cell;
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 500%;
+    width: 100%;
+}
+
+/** Shrink podcast titles **/
+.article-header h2.h1 {
+    font-size: 28px;
+}
+
+
+.tagcloud a, .tagcloud a:visited {
+    padding: .1em .3em .1em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1.5em;
+    color: #333333;
+    text-align: center;
+    vertical-align: baseline;
+    border-radius: 0;
+    background-color: inherit;
+    white-space: normal;
+}
+.tagcloud a:hover, .tagcloud a:active {
+    color: #ffffff;
+}
+.widget {
+    margin-bottom: 20px;
+}
+/** WIDGET POST SLIDER **/
+.widget_sp_widget_post_slider {
+    margin-bottom: 0px;
+}
+.sp-widget-post-slider-section {
+    max-width: 354px;
+}
+.widget-post-slider .wps-caption {
+    bottom: inherit;
+    top: 0;
+}
+.widget-post-slider {
+    max-height: 185px;
+    overflow: hidden;
+}
+
+/** Sticky Sidebar **/
+#sticky-sidebar-1 h2, article h2.h1 {
+    margin-top: 0px;
+}
+
+/* all phones up to 6 plus (in portrait mode) */
+@media only screen and (max-width : 414px) {
+    
+    #sticky-sidebar-2, #sticky-sidebar-3 {
+        width: 100%;
+    }
+    
+}
+
+/**
+ * FEATURED IMAGE BACKGROUNDS *
+ **/
+
 .featured-bg {
     background-repeat: no-repeat;
 /*    background-attachment: fixed;*/
@@ -25,9 +97,6 @@ Template: 	simple-bootstrap
     background-color: rgba(0,0,0,0.5);
     color: #ffffff;
     font-weight: 900;
-}
-.article-header h2.h1 {
-    font-size: 28px;
 }
 .single-podcast .featured-bg .article-header h1, .single-podcast .featured-bg .article-header h2 {
     margin-bottom: 250px;
@@ -96,52 +165,4 @@ article.featured-bg .post_content .podcast_meta {
 }
 .featured-bg p.tags a {
     margin-bottom: 2px;
-}
-.tagcloud a, .tagcloud a:visited {
-    padding: .1em .3em .1em;
-    font-size: 75%;
-    font-weight: bold;
-    line-height: 1.5em;
-    color: #333333;
-    text-align: center;
-    vertical-align: baseline;
-    border-radius: 0;
-    background-color: inherit;
-    white-space: normal;
-}
-.tagcloud a:hover, .tagcloud a:active {
-    color: #ffffff;
-}
-.widget {
-    margin-bottom: 20px;
-}
-.widget_sp_widget_post_slider {
-    margin-bottom: 0px;
-}
-.sp-widget-post-slider-section {
-    max-width: 354px;
-}
-.widget-post-slider .wps-caption {
-    bottom: inherit;
-    top: 0;
-}
-.widget-post-slider {
-    max-height: 185px;
-    overflow: hidden;
-}
-#sticky-sidebar-1 h2, article h2.h1 {
-    margin-top: 0px;
-}
-
-#sticky-sidebar-2, #sticky-sidebar-3 {
-}
-
-
-/* all phones up to 6 plus (in portrait mode) */
-@media only screen and (max-width : 414px) {
-    
-    #sticky-sidebar-2, #sticky-sidebar-3 {
-        width: 100%;
-    }
-    
 }

@@ -1,24 +1,27 @@
 (function($) {
-    $(document).ready(function(){
-        var $p_player = $('.podcast_player');
-        $p_player.each(function(i, el){
-            var callback;
-            callback = function(){
-                var $el = $(el),
-                    $p_btn = $el.find('.mejs-playpause-button button'),
-                    $clone
-                ;
-                if( $p_btn.length ) {
-                        $clone = $p_btn.clone(true)
-                        .addClass('playpause-cloned')
-                        .insertAfter($p_btn);
-
-                }
-                else {
-                    setTimeout(callback, 10);
-                }
+    function playPauseAudioPlayer(e){
+        var $el = $(e.target)
+        ,   $player = $el.closest('.podcast_player')
+        ,   $btn = $player.find('.mejs-playpause-button')
+        ,   $title = $btn.attr('title')
+        ;
+        if( $btn.length ){
+            $btn.click();
+            // Copy title
+            $el.attr('title', $title);
+            // Copy play/pause icon
+            if( $title = 'Pause' ){
+                $el.find('.playpause-button').removeClass('glyphicon-play').addClass('glyphicon-pause');
+            } else {
+                $el.find('.playpause-button').removeClass('glyphicon-pause').addClass('glyphicon-play');
             }
-//            callback();
-        });     
+
+        }
+
+        // return false to prevent click from activating link
+        return false;
+    }
+    $(document).ready(function(){
+        $('.playpause a').click(playPauseAudioPlayer);        
     });
 })(jQuery);
