@@ -84,7 +84,7 @@ function podcast_extension_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'podcast_extension_scripts' );
-s
+
 
 /** Change 'Speaker(s)' to 'Contributor(s)' **/
 
