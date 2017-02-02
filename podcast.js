@@ -1,6 +1,7 @@
 (function($) {
     function playPauseAudioPlayer(e){
         var $el = $(e.target)
+        ,   $a = $el.closest('a')
         ,   $player = $el.closest('article').find('.podcast_player')
         ,   $btn = $player.find('.mejs-playpause-button button')
         ,   $title = $btn.attr('title')
@@ -8,12 +9,12 @@
         if( $btn.length ){
             $btn.click();
             // Copy title
-            $el.attr('title', $title);
+            $a.attr('title', $title);
             // Copy play/pause icon
             if( $title = 'Pause' ){
-                $el.find('.playpause-button').removeClass('glyphicon-play').addClass('glyphicon-pause');
+                $a.find('.playpause-button').removeClass('glyphicon-play').addClass('glyphicon-pause');
             } else {
-                $el.find('.playpause-button').removeClass('glyphicon-pause').addClass('glyphicon-play');
+                $a.find('.playpause-button').removeClass('glyphicon-pause').addClass('glyphicon-play');
             }
 
         }
