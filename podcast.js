@@ -1,9 +1,9 @@
 (function($) {
     function playPauseAudioPlayer(e){
         var $el = $(e.target)
-        ,   $player = $el.closest('.podcast_player')
+        ,   $player = $el.closest('article').find('.podcast_player')
         ,   $btn = $player.find('.mejs-playpause-button button')
-        ,   $title = $btn.prop('title')
+        ,   $title = $btn.attr('title')
         ;
         if( $btn.length ){
             $btn.click();
