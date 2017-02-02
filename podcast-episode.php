@@ -22,7 +22,7 @@
             <?php if (has_post_thumbnail() && !$feature_bg) { ?>
             <div class="featured-image playpause">
                 <a href="<?php the_permalink() ?>" title="Play Episode">
-                <span class="playpause-button glyphicon glyphicon-play"></span><?php the_post_thumbnail('simple_boostrap_featured'); ?></a>
+                <span class="playpause-button glyphicon glyphicon-play-circle"></span><?php the_post_thumbnail('simple_boostrap_featured'); ?></a>
             </div>
             <?php } ?>
 
