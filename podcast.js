@@ -13,9 +13,9 @@
                 $a.attr('title', $title);
                 // Copy play/pause icon
                 if( $title == 'Pause' ){
-                    $a.find('.playpause-button').removeClass('glyphicon-play-circle').addClass('glyphicon-pause-circle');
+                    $a.find('.playpause-button').removeClass('glyphicon-play').addClass('glyphicon-pause');
                 } else {
-                    $a.find('.playpause-button').removeClass('glyphicon-pause-circle').addClass('glyphicon-play-circle');
+                    $a.find('.playpause-button').removeClass('glyphicon-pause').addClass('glyphicon-play');
                 }
             }, 10);
 
