@@ -29,7 +29,7 @@
     });
     $(window).resize(function(e){
         var screenX = $(window).width()
-        ,   maxWidth = Math.max(screenX-60, 0)
+        ,   maxWidth = Math.max(screenX-40, 0)
         ;
         $('.sp-widget-post-slider-section').css('max-width', maxWidth);
     });
