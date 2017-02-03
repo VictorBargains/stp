@@ -24,13 +24,17 @@
         // return false to prevent click from activating link
         return false;
     }
-    $(document).ready(function(){
-        $('.playpause a').click(playPauseAudioPlayer);        
-    });
-    $(window).resize(function(e){
+    function resizeSlider(e){
         var screenX = $(window).width()
         ,   maxWidth = Math.max(screenX-40, 0)
         ;
         $('.sp-widget-post-slider-section').css('max-width', maxWidth);
+        $('.slick-track').css('max-width', maxWidth);
+    }
+    resizeSlider(); // do before everything loads
+    $(document).ready(function(){
+        resizeSlider(); // do after everything loads
+        $('.playpause a').click(playPauseAudioPlayer);
     });
+    $(window).resize(resizeSlider); // do after resize
 })(jQuery);
