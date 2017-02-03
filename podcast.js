@@ -28,8 +28,8 @@
         $('.playpause a').click(playPauseAudioPlayer);        
     });
     $(window).resize(function(e){
-        var screenX = window.screenX
-        ,   maxWidth = screenX-60
+        var screenX = $(window).width
+        ,   maxWidth = Math.max(screenX-60, 0)
         ;
         $('.sp-widget-post-slider-section').css('max-width', maxWidth);
     });
