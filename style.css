@@ -60,9 +60,11 @@ Template: 	simple-bootstrap
 .widget_sp_widget_post_slider {
     margin-bottom: 0px;
 }
+/*
 .sp-widget-post-slider-section {
     max-width: 354px;
 }
+*/
 .widget-post-slider .wps-caption {
     bottom: inherit;
     top: 0;
