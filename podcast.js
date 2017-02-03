@@ -27,9 +27,9 @@
     $(document).ready(function(){
         $('.playpause a').click(playPauseAudioPlayer);        
     });
-    $(document).resize(function(e){
-        var width = $(document).width()
-        ,   maxWidth = Math.max(width-60, 0)
+    $(window).resize(function(e){
+        var screenX = $(window).width()
+        ,   maxWidth = Math.max(screenX-60, 0)
         ;
         $('.sp-widget-post-slider-section').css('max-width', maxWidth);
     });
