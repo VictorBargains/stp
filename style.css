@@ -71,6 +71,8 @@ Template: 	simple-bootstrap
 }
 .wps-caption {
     text-align: center;
+} 
+.wps-caption a {
     font-weight: 500;
     font-size: 120%;
     letter-spacing: 0.06em;
