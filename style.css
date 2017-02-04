@@ -69,6 +69,11 @@ Template: 	simple-bootstrap
     bottom: inherit;
     top: 0;
 }
+.wps-caption {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+}
 .widget-post-slider {
     max-height: 185px;
     overflow: hidden;
