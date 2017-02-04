@@ -29,7 +29,7 @@
         ,   maxWidth = Math.max(screenX-40, 0)
         ;
         $('.sp-widget-post-slider-section').css('max-width', maxWidth);
-        $('.slick-track').css('max-width', maxWidth);
+//        $('.slick-track').css('max-width', maxWidth);
     }
     resizeSlider(); // do before everything loads
     $(document).ready(function(){
