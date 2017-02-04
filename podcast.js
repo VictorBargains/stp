@@ -31,7 +31,7 @@
         $('.sp-widget-post-slider-section').css('max-width', maxWidth);
 //        $('.slick-track').css('max-width', maxWidth);
     }
-    resizeSlider(); // do before everything loads
+//    resizeSlider(); // do before everything loads
     $(document).ready(function(){
         resizeSlider(); // do after everything loads
         $('.playpause a').click(playPauseAudioPlayer);
