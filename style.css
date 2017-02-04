@@ -72,7 +72,10 @@ Template: 	simple-bootstrap
 .wps-caption {
     text-align: center;
     font-weight: 500;
+    font-size: 120%;
     letter-spacing: 0.06em;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .widget-post-slider {
     max-height: 185px;
