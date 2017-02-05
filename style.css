@@ -98,8 +98,7 @@ Template: 	simple-bootstrap
     
 }
 
-/** Eliminating menu collapsing **/
-
+/* disable navbar collapse */
 .navbar-collapse.collapse {
   display: block!important;
 }
@@ -114,19 +113,4 @@ Template: 	simple-bootstrap
 
 .navbar-right {
   float: right!important;
-}
-
-/* All items */
-.navbar-collapse.collapse .menu-item {
-    
-}
-
-/* Parent Items */
-.navbar-collapse.collapse .menu-item-has-children {
-    
-}
-
-/* Child Items */
-.navbar-collapse.collapse .menu-item .menu-item {
-    
 }
