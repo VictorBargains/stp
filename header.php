@@ -25,14 +25,14 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 // check for plugin using plugin name
 if ( is_plugin_active( 'my-bootstrap-menu/my-bootstrap-menu.php' ) ) { ?>
 
-        				<?php wp_nav_menu( array( 'menu' => 'Main Menu' ) ); ?>
+        				<?php wp_nav_menu( array( 'menu' => 'Top Navbar' ) ); ?>
                     <?php } else { ?>
 
 			<nav class="navbar navbar-default navbar-static-top">
 				<div class="container">
 		  
 					<div class="navbar-header">
-						<?php if ($collapse_nav && has_nav_menu("main_nav")): ?>
+						<?php if (has_nav_menu("main_nav")): ?>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-responsive-collapse">
 		    				<span class="sr-only"><?php _e('Navigation', 'simple-bootstrap'); ?></span>
 							<span class="icon-bar"></span>
