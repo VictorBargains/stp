@@ -39,13 +39,13 @@
         $('.playpause a').click(playPauseAudioPlayer);
         $('audio').each(function(i, el){
             var $media = $(el);
-            $media.addEventListener('play', function(e){
+            $media.on('play', function(e){
                 $(el).closest('article').find('.playpause-button').removeClass(initialClass).removeClass(pausedClass).addClass(playingClass).closest('a').attr('title', 'Pause');
             });
-            $media.addEventListener('pause', function(e){
+            $media.on('pause', function(e){
                 $(el).closest('article').find('.playpause-button').removeClass(initialClass).removeClass(playingClass).addClass(pausedClass).closest('a').attr('title', 'Play');
             });
-            $media.addEventListener('ended', function(e){
+            $media.on('ended', function(e){
                 $(el).closest('article').find('.playpause-button').removeClass(playingClass).removeClass(pausedClass).addClass(initialClass).closest('a').attr('title', 'Play');
             });
         });
