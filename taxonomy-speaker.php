@@ -18,10 +18,10 @@
                 {
                     $meta_image = get_wp_term_image($term_id); //get category/term image url 
                     ?>
-                    <div class="speaker-photo col-xs-4 col-sm-push-4"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>">
+                    <div class="speaker-photo col-xs-3 col-sm-push-9"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>">
                 <?php } ?>
 
-                    <div class="speaker-description col-sm-8 col-sm-pull-4"><p><?php echo $queried_object->description; ?></p></div>
+                    <div class="speaker-description col-sm-9 col-sm-pull-3"><p><?php echo $queried_object->description; ?></p></div>
                     
             </div>
         </div>
@@ -47,7 +47,7 @@
 		<?php else : ?>
 		
 		<article id="post-not-found" class="block">
-            <?php var_dump($taxonomy); ?>
+            <?php var_dump($queried_object); ?>
 		    <p><?php _e("This " . $taxonomy->singular_name . " does not appear in any episodes yet.", "simple-bootstrap"); ?></p>
 		</article>
 		
