@@ -22,11 +22,11 @@
 
 // vars
 $queried_object = get_queried_object(); 
-//$taxonomy = $queried_object->taxonomy;
-//$term_id = $queried_object->term_id;  
+$taxonomy = $queried_object->taxonomy;
+$term_id = $queried_object->term_id;  
 
 // load thumbnail for this taxonomy term (term object)
-$desc = get_field('description', $queried_object);
+$desc = get_term_meta($term_id, 'description', true);
             if( $desc.length ){
                 ?><p class="speaker-description"><?php echo $desc; ?></p><?php
             }
