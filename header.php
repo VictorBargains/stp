@@ -33,9 +33,7 @@
 
 					<?php if (has_nav_menu("main_nav")): ?>
 					<div id="navbar-responsive-collapse" class="<?php if( $collapse_nav ){ ?>collapse navbar-collapse<? } else { ?>navbar-nav<? }?>">
-						<?php
-						    simple_bootstrap_display_main_menu();
-						?>
+						<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 
 					</div>
 					<?php endif ?>
