@@ -98,160 +98,19 @@ Template: 	simple-bootstrap
     
 }
 
-/* shorten navbar breakpoint */
-
-@media (min-width: 480px) {
-  .navbar-left {
-    float: left !important;
-  }
-  .navbar-right {
-    float: right !important;
-  }
-}
-.navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 3.5px;
-  margin-bottom: 3.5px;
-}
-@media (min-width: 768px) {
-  .navbar-form .form-group {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  .navbar-form .form-control {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-  }
-  .navbar-form .input-group {
-    display: inline-table;
-    vertical-align: middle;
-  }
-  .navbar-form .input-group .input-group-addon,
-  .navbar-form .input-group .input-group-btn,
-  .navbar-form .input-group .form-control {
-    width: auto;
-  }
-  .navbar-form .input-group > .form-control {
-    width: 100%;
-  }
-  .navbar-form .control-label {
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  .navbar-form .radio,
-  .navbar-form .checkbox {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  .navbar-form .radio label,
-  .navbar-form .checkbox label {
-    padding-left: 0;
-  }
-  .navbar-form .radio input[type="radio"],
-  .navbar-form .checkbox input[type="checkbox"] {
-    position: relative;
-    margin-left: 0;
-  }
-  .navbar-form .has-feedback .form-control-feedback {
-    top: 0;
-  }
+/* disable navbar collapse */
+.navbar-collapse.collapse {
+  display: block!important;
 }
 
-/**
- * FEATURED IMAGE BACKGROUNDS *
- **/
-
-.featured-bg {
-    background-repeat: no-repeat;
-/*    background-attachment: fixed;*/
-    background-position: 50% 10%;
-    background-size: cover;
-    
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
 }
 
-.featured-bg .article-header h2, .featured-bg .article-header h2.h1, .featured-bg .article-header h1 {
-    width: 100%;
-    margin: 0px 0px 140px 0px;
-    padding: 2px 1px 3px 0.2em;
-    background-color: rgba(0,0,0,0.5);
-    color: #ffffff;
-    font-weight: 900;
-}
-.single-podcast .featured-bg .article-header h1, .single-podcast .featured-bg .article-header h2 {
-    margin-bottom: 250px;
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
 }
 
-.featured-bg .featured-image {
-    display: hidden;
-    position: absolute;
-}
-header.featured-bg .featured-image {
-     max-height: 400px;
-}
-article.featured-bg {
-    padding: 0px;
-}
-article.featured-bg .post_content {
-    margin: 0px;
-    padding: 0px;
-/*    padding: 2px 20px 4px 20px;*/
-}
-article.featured-bg .post_content p {
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 0px;
-    padding: 0.3em 20px;
-}
-#main article.featured-bg ul.meta {
-    text-align: right;
-    width: 100%;
-    margin: 0px;
-    padding: 2px 2px 2px 4px;
-}
-article.featured-bg .post_content .podcast_player {
-    width: 100%;
-    margin: 0px;
-}
-article.featured-bg .post_content .podcast_meta {
-    padding: 0px 20px 0px 20px;
-}
-.featured-bg .podcast_meta a {
-    font-weight: 700;
-    letter-spacing: 0.08em;
-}
-#main article.featured-bg footer .post_footer_meta {
-    text-align: right;
-    padding: 2px 4px 4px 4px;
-    width: 100%;
-}
-.featured-bg .podcast_meta, .featured-bg footer {
-    background-color: rgba(34, 34, 34, 0.8);
-    color: #ffffff;
-}
-.featured-bg footer {
-    margin: 0px;
-    padding: 0px;
-}
-.featured-bg p.tags .tag-label {
-    display: inline-block;
-    float: left;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    padding-left: 20px;
-}
-.featured-bg p.tags {
-    margin-bottom: 0px;
-    padding: 0px 4px 0px 0px;
-}
-.featured-bg p.tags a {
-    margin-bottom: 2px;
+.navbar-right {
+  float: right!important;
 }
