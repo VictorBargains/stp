@@ -1,6 +1,6 @@
 <!doctype html>  
 <?php 
-    $collapse_nav = true;
+    $collapse_nav = false;
 ?>
 <html <?php language_attributes(); ?>>
 <head>
@@ -32,7 +32,7 @@ if ( is_plugin_active( 'my-bootstrap-menu/my-bootstrap-menu.php' ) ) { ?>
 				<div class="container">
 		  
 					<div class="navbar-header">
-						<?php if (has_nav_menu("main_nav")): ?>
+						<?php if ($collapse_nav && has_nav_menu("main_nav")): ?>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-responsive-collapse">
 		    				<span class="sr-only"><?php _e('Navigation', 'simple-bootstrap'); ?></span>
 							<span class="icon-bar"></span>
@@ -45,7 +45,9 @@ if ( is_plugin_active( 'my-bootstrap-menu/my-bootstrap-menu.php' ) ) { ?>
 
 					<?php if (has_nav_menu("main_nav")): ?>
 					<div id="navbar-responsive-collapse" class="<?php if( $collapse_nav ){ ?>collapse navbar-collapse<? } else { ?>navbar-nav<? }?>">
-						<?php wp_nav_menu( array( 'menu' => 'Main Menu', 'menu_class' => 'navbar-nav' ) ); ?>
+						<?php
+						    simple_bootstrap_display_main_menu();
+						?>
 
 					</div>
 					<?php endif ?>
