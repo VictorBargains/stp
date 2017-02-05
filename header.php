@@ -25,7 +25,7 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 // check for plugin using plugin name
 if ( is_plugin_active( 'my-bootstrap-menu/my-bootstrap-menu.php' ) ) { ?>
 
-        				<?php wp_nav_menu( array( 'menu' => 'Top Navbar' ) ); ?>
+        				<?php wp_nav_menu( array( 'theme_location' => 'main_nav' ) ); ?>
                     <?php } else { ?>
 
 			<nav class="navbar navbar-default navbar-static-top">
