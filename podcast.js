@@ -38,7 +38,7 @@
         $(window).resize(resizeSlider); // do after resize
         $('.playpause a').click(playPauseAudioPlayer);
         $('audio').each(function(i, el){
-            var $media = $(el).player.media;
+            var $media = $(el);
             $media.addEventListener('play', function(e){
                 $(el).closest('article').find('.playpause-button').removeClass(initialClass).removeClass(pausedClass).addClass(playingClass).closest('a').attr('title', 'Pause');
             });
