@@ -39,18 +39,17 @@ Template: 	simple-bootstrap
 
 /** Speaker (Contributor) Bio Portraits **/
 .speaker-photo {
-    max-height: 80vh;
-    overflow-y: hidden;
     float: right;
     width: 33%;
 }
 .speaker-photo img {
     width: 100%;
 }
-@media(screen and max-width: 360px){
+@media(screen and max-width: 414px){
     .speaker-photo {
-        width: 100%;
-        float: left;
+        width: 100% !important;
+        max-height: 80vh !important;
+        overflow-y: hidden !important;
     }
 }
 /** Tags **/
