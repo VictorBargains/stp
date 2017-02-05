@@ -20,11 +20,13 @@
                     $meta_image = get_wp_term_image($term_id); //get category/term image url 
                     if( !empty($meta_image) ){
                     ?>
-                    <div class="speaker-photo col-xs-3 col-sm-push-9"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>"></div>
+                    <div class="speaker-photo col-sm-3 col-sm-push-9"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>"></div>
                     <?php } ?>
-                <?php } ?>
+                <?php } 
+                if( !empty($queried_object->description) ){ ?>
+                
                     <div class="speaker-description col-sm-9 col-sm-pull-3"><p><?php echo $queried_object->description; ?></p></div>
-                    
+                <?php } ?>
             </div>
         </div>
 
