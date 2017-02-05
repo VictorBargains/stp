@@ -154,10 +154,10 @@ Template: 	simple-bootstrap
     }
 }
 ul.dropdown-menu {
-    max-width: 200px;
+    max-width: 270px;
 }
 ul.dropdown-menu>li>a {
    font-size: 120%;
-    padding: 10px 15px 10px 25px;
+    padding: 12px 15px 12px 25px;
     white-space: normal;
 }
