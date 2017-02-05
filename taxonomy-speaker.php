@@ -18,20 +18,21 @@
                 if (function_exists('get_wp_term_image'))
                 {
                     $meta_image = get_wp_term_image($term_id); //get category/term image url 
+                    if( !empty($meta_image) ){
                     ?>
                     <div class="speaker-photo col-xs-3 col-sm-push-9"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>"></div>
+                    <?php } ?>
                 <?php } ?>
-
                     <div class="speaker-description col-sm-9 col-sm-pull-3"><p><?php echo $queried_object->description; ?></p></div>
                     
             </div>
         </div>
 
-		<?php if (have_posts()) : ?>
-
         <article id="speaker-episode-count" class="block">
-		    <p><?php _e($queried_object->name . " appears in " . $queried_object->count . ' episode' . ($queried_object->count==1?'':'s') . ".", "simple-bootstrap"); ?></p>
+		    <p><?php _e($queried_object->name . " appears in " . $queried_object->count . ' episode' . ($queried_object->count==1?'':'s') . ($queried_object->count>0?':':'.'), "simple-bootstrap"); ?></p>
 		</article>
+
+		<?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
 		
@@ -48,12 +49,6 @@
 		<?php endwhile; ?>	
 		
 		<?php stp_page_navi(); ?>	
-		
-		<?php else : ?>
-		
-		<article id="post-not-found" class="block">
-		    <p><?php _e("This " . $taxonomy->singular_name . " does not appear in any episodes yet.", "simple-bootstrap"); ?></p>
-		</article>
 		
 		<?php endif; ?>
 
