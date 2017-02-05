@@ -183,7 +183,7 @@ ul.dropdown-menu>li>a {
     padding: 12px 15px 12px 25px;
     white-space: normal;
 }
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .nav .menu-item > a, .nav .menu-item > a:hover, .nav .menu-item > a:focus {
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .nav > .menu-item > a:hover, .nav > .menu-item > a:focus {
     background-color: #2780e3 !important;
     border-color: #e6e6e6 !important;
 }
