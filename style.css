@@ -115,7 +115,7 @@ Template: 	simple-bootstrap
   float: right!important;
 }
 
-navbar .navbar-header {
+.navbar .navbar-header {
     display: inline-block;
     margin-bottom: -22px;
 }
