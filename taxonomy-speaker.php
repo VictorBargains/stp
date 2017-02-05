@@ -22,6 +22,7 @@
 
 // vars
 $queried_object = get_queried_object(); 
+ var_dump( $queried_object );
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
 
@@ -33,9 +34,7 @@ $desc = get_term_meta($term_id, 'description', true);
 
 ?>
             
-            
-            <p class="speaker-description"></p>
-		</div>
+    		</div>
 
 		<?php if (have_posts()) : ?>
 
