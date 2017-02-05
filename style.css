@@ -132,7 +132,7 @@ Template: 	simple-bootstrap
     display: none !important;
 }
     .navbar .navbar-brand {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
