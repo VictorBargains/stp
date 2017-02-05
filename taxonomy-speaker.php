@@ -9,6 +9,12 @@
 				<?php echo get_the_archive_title() ?>
 			</h1>
                         <?php 
+    // vars
+$queried_object = get_queried_object(); 
+$taxonomy = $queried_object->taxonomy;
+$term_id = $queried_object->term_id;  
+$desc = $queried_object->description
+
             if (function_exists('get_wp_term_image'))
             {
                 $meta_image = get_wp_term_image($term_id); 
@@ -19,12 +25,6 @@
             ?>
             
             <?php 
-
-// vars
-$queried_object = get_queried_object(); 
- var_dump( $queried_object );
-$taxonomy = $queried_object->taxonomy;
-$term_id = $queried_object->term_id;  
 
 // load thumbnail for this taxonomy term (term object)
 $desc = get_term_meta($term_id, 'description', true);
