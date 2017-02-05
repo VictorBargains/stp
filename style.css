@@ -115,9 +115,17 @@ Template: 	simple-bootstrap
   float: right!important;
 }
 
-
 .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
-    position: absolute;
+    position: absolute !important;
     background-color: #fff;
     border: 1px solid #000;
+}
+
+@media (max-width: 767px) {
+    
+    .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
+        position: absolute !important;
+        background-color: #fff;
+        border: 1px solid #000;
+    }
 }
