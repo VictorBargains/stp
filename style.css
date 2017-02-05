@@ -115,10 +115,12 @@ Template: 	simple-bootstrap
   float: right!important;
 }
 
+/*
 .navbar .navbar-header {
     display: inline-block;
     margin-bottom: -22px;
 }
+*/
 .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
     position: absolute !important;
     background-color: #fff !important;
@@ -127,9 +129,11 @@ Template: 	simple-bootstrap
 
 @media (max-width: 767px) {
     .navbar .navbar-header {
-    display: inline-block;
-    margin-bottom: -22px;
+    display: none !important;
 }
+    .navbar .navbar-brand {
+        display: inline-block;
+    }
 
     .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
         position: absolute !important;
