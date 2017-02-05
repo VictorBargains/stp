@@ -42,14 +42,14 @@ Template: 	simple-bootstrap
     max-height: 80vh;
     overflow-y: hidden;
     float: right;
-/*    width: 33%;*/
+    width: 33%;
 }
 .speaker-photo img {
     width: 100%;
 }
-@media(screen and max-width: 414px){
+@media(screen and max-width: 360px){
     .speaker-photo {
-        width: 33%;
+        width: 100%;
         float: left;
     }
 }
