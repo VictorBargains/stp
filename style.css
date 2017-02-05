@@ -41,19 +41,18 @@ Template: 	simple-bootstrap
 .speaker-photo {
     max-height: 80vh;
     overflow-y: hidden;
-/*    float: right;*/
+    float: right;
 /*    width: 33%;*/
 }
 .speaker-photo img {
     width: 100%;
 }
-/*
 @media(screen and max-width: 414px){
     .speaker-photo {
-        width: 100%;
+        width: 33%;
+        float: left;
     }
 }
-*/
 /** Tags **/
 
 .tagcloud a, .tagcloud a:visited {
