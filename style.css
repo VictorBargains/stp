@@ -117,15 +117,15 @@ Template: 	simple-bootstrap
 
 .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
     position: absolute !important;
-    background-color: #fff;
-    border: 1px solid #000;
+    background-color: #fff !important;
+    border: 1px solid #000 !important;
 }
 
 @media (max-width: 767px) {
     
     .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
         position: absolute !important;
-        background-color: #fff;
-        border: 1px solid #000;
+        background-color: #fff !important;
+        border: 1px solid #000 !important;
     }
 }
