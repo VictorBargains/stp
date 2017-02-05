@@ -40,6 +40,7 @@ Template: 	simple-bootstrap
 /** Speaker (Contributor) Bio Portraits **/
 .speaker-photo img {
     width: 100%;
+    max-height: 80vh;
 }
 
 /** Tags **/
