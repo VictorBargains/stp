@@ -13,7 +13,7 @@
 $queried_object = get_queried_object(); 
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;  
-$desc = $queried_object->description
+$desc = $queried_object->description;
 
             if (function_exists('get_wp_term_image'))
             {
