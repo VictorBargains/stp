@@ -127,13 +127,25 @@ Template: 	simple-bootstrap
     border: 1px solid #000 !important;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 494px){
     .navbar .navbar-header {
     display: none !important;
 }
     .navbar .navbar-brand {
         display: inline-block !important;
     }
+    
+}
+
+@media (max-width: 767px) {
+/*
+    .navbar .navbar-header {
+    display: none !important;
+}
+    .navbar .navbar-brand {
+        display: inline-block !important;
+    }
+*/
 
     .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
         position: absolute !important;
@@ -141,7 +153,11 @@ Template: 	simple-bootstrap
         border: 1px solid #000 !important;
     }
 }
+ul.dropdown-menu {
+    max-width: 200px;
+}
 ul.dropdown-menu>li>a {
    font-size: 120%;
     padding: 10px 15px 10px 25px;
+    white-space: normal;
 }
