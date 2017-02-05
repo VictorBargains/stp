@@ -13,7 +13,6 @@
                 $queried_object = get_queried_object(); 
                 $taxonomy = $queried_object->taxonomy;
                 $term_id = $queried_object->term_id;  
-                $desc = $queried_object->description;
 
                 if (function_exists('get_wp_term_image'))
                 {
@@ -22,9 +21,8 @@
                     <div class="speaker-photo col-sm-4 col-sm-push-8"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>">
                 <?php } ?>
 
-                    <div class="speaker-description col-sm-8 col-sm-pull-4"><?php echo $desc; ?></div>
+                    <div class="speaker-description col-sm-8 col-sm-pull-4"><?php echo $queried_object->description; ?></div>
                     
-                <?php } ?>
             </div>
         </div>
 
