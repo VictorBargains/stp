@@ -8,26 +8,25 @@
 			<h1 class="archive_title">
 				<?php echo get_the_archive_title() ?>
 			</h1>
-                        <?php 
-    // vars
-$queried_object = get_queried_object(); 
-$taxonomy = $queried_object->taxonomy;
-$term_id = $queried_object->term_id;  
-$desc = $queried_object->description;
+            <div class="row">
+            <?php // vars
+                $queried_object = get_queried_object(); 
+                $taxonomy = $queried_object->taxonomy;
+                $term_id = $queried_object->term_id;  
+                $desc = $queried_object->description;
 
-            if (function_exists('get_wp_term_image'))
-            {
-                $meta_image = get_wp_term_image($term_id); 
-                //It will give category/term image url 
-                ?>
-                <img src="<?php echo $meta_image; ?>" class="speaker-portrait">
-            <?php }
-                
-            if( $desc.length > 0 ){
-                ?><p class="speaker-description"><?php echo $desc; ?></p><?php
-            }
+                if (function_exists('get_wp_term_image'))
+                {
+                    $meta_image = get_wp_term_image($term_id); //get category/term image url 
+                    ?>
+                    <div class="speaker-photo col-sm-4 col-sm-push-8"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>">
+                <?php } ?>
 
-        ?></div>
+                    <div class="speaker-description col-sm-8 col-sm-pull-4"><?php echo $desc; ?></div>
+                    
+                <?php } ?>
+            </div>
+        </div>
 
 		<?php if (have_posts()) : ?>
 
@@ -50,7 +49,7 @@ $desc = $queried_object->description;
 		<?php else : ?>
 		
 		<article id="post-not-found" class="block">
-		    <p><?php _e("No items found.", "simple-bootstrap"); ?></p>
+		    <p><?php _e("This " . $taxonomy->labels->singular_name . "does not appear in any episodes yet.", "simple-bootstrap"); ?></p>
 		</article>
 		
 		<?php endif; ?>
