@@ -16,6 +16,18 @@
 	<div id="content-wrapper">
 
 		<header>
+<?php
+/**
+ * Detect plugin. For use on Front End only.
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+// check for plugin using plugin name
+if ( is_plugin_active( 'my-bootstrap-menu/my-bootstrap-menu.php' ) ) { ?>
+
+        				<?php wp_nav_menu( array( 'menu' => 'Main Menu' ) ); ?>
+                    <?php } else { ?>
+
 			<nav class="navbar navbar-default navbar-static-top">
 				<div class="container">
 		  
@@ -32,15 +44,15 @@
 					</div>
 
 					<?php if (has_nav_menu("main_nav")): ?>
-                        <?php if ( $collapse_menu ) { ?>
 					<div id="navbar-responsive-collapse" class="<?php if( $collapse_nav ){ ?>collapse navbar-collapse<? } else { ?>navbar-nav<? }?>">
-                    <?php } else { ?>
 						<?php wp_nav_menu( array( 'menu' => 'Main Menu', 'menu_class' => 'navbar-nav' ) ); ?>
-                    <?php if ( $collapse_menu ) { ?></div><?php } ?>
+
+					</div>
 					<?php endif ?>
 
 				</div>
 			</nav>
+            <?php } ?>
 		</header>
 
         <?php if (has_header_image()): ?>
