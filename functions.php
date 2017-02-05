@@ -6,7 +6,7 @@ show custom post type in archive and term pages from https://wordpress.org/suppo
 add_filter('pre_get_posts', 'query_post_type');
 function query_post_type($query) {
 //  if(is_category() || is_tag()) {
-    if ( is_main_query() && (is_category() || is_archive() || is_tag()) /*&& empty( $query->query_vars['suppress_filters'] )*/ ) {
+    if ( $query->is_main_query() && (is_category() || is_archive() || is_tag()) /*&& empty( $query->query_vars['suppress_filters'] )*/ ) {
         $post_type = get_query_var('post_type');
         if($post_type)
             $post_type = $post_type;
