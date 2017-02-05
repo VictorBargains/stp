@@ -115,6 +115,10 @@ Template: 	simple-bootstrap
   float: right!important;
 }
 
+navbar .navbar-header {
+    display: inline-block;
+    margin-bottom: -22px;
+}
 .nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
     position: absolute !important;
     background-color: #fff !important;
