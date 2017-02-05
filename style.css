@@ -114,3 +114,10 @@ Template: 	simple-bootstrap
 .navbar-right {
   float: right!important;
 }
+
+
+.nav-pills .open .dropdown-menu, .nav-tabs .open .dropdown-menu, .btn-group.navbar-btn .open .dropdown-menu, .navbar-btn .open .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000;
+}
