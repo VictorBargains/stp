@@ -97,3 +97,36 @@ Template: 	simple-bootstrap
     }
     
 }
+
+/** Eliminating menu collapsing **/
+
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
+/* All items */
+.navbar-collapse.collapse .menu-item {
+    
+}
+
+/* Parent Items */
+.navbar-collapse.collapse .menu-item-has-children {
+    
+}
+
+/* Child Items */
+.navbar-collapse.collapse .menu-item .menu-item {
+    
+}
