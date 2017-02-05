@@ -45,7 +45,7 @@ Template: 	simple-bootstrap
 .speaker-photo img {
     width: 100%;
 }
-@media(screen and max-width: 414px){
+@media(max-width: 414px){
     .speaker-photo {
         width: 100% !important;
         max-height: 80vh !important;

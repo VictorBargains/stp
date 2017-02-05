@@ -8,7 +8,7 @@
 			<h1 class="archive_title">
 				<?php echo get_the_archive_title() ?>
 			</h1>
-            <div class="row">
+<!--            <div class="row">-->
             <?php // vars
                 $queried_object = get_queried_object(); 
                 $taxonomy = get_taxonomy($queried_object->taxonomy);
@@ -20,14 +20,14 @@
                     $meta_image = get_wp_term_image($term_id); //get category/term image url 
                     if( !empty($meta_image) ){
                     ?>
-                    <div class="speaker-photo col-sm-3 col-sm-push-9"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>"></div>
+                    <div class="speaker-photo"><img title="<?php echo $queried_object->name; ?>" src="<?php echo $meta_image; ?>"></div>
                     <?php } ?>
                 <?php } 
                 if( !empty($queried_object->description) ){ ?>
                 
-                    <div class="speaker-description col-sm-9 col-sm-pull-3"><p><?php echo $queried_object->description; ?></p></div>
+                    <div class="speaker-description"><p><?php echo $queried_object->description; ?></p></div>
                 <?php } ?>
-            </div>
+<!--            </div>-->
         </div>
 
         <article id="speaker-episode-count" class="block">
