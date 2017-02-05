@@ -37,6 +37,12 @@ Template: 	simple-bootstrap
     font-size: 28px;
 }
 
+/** Speaker (Contributor) Bio Portraits **/
+.speaker-photo {
+    float: right;
+}
+
+/** Tags **/
 
 .tagcloud a, .tagcloud a:visited {
     padding: .1em .3em .1em;
@@ -53,6 +59,8 @@ Template: 	simple-bootstrap
 .tagcloud a:hover, .tagcloud a:active {
     color: #ffffff;
 }
+
+/** WIDGETS **/
 .widget {
     margin-bottom: 20px;
 }

@@ -19,22 +19,15 @@ $desc = $queried_object->description;
             {
                 $meta_image = get_wp_term_image($term_id); 
                 //It will give category/term image url 
-            }
-
-            echo $meta_image; // category/term image url
-            ?>
-            
-            <?php 
-
-// load thumbnail for this taxonomy term (term object)
-$desc = get_term_meta($term_id, 'description', true);
-            if( $desc.length ){
+                ?>
+                <img src="<?php echo $meta_image; ?>" class="speaker-portrait">
+            <?php }
+                
+            if( $desc.length > 0 ){
                 ?><p class="speaker-description"><?php echo $desc; ?></p><?php
             }
 
-?>
-            
-    		</div>
+        ?></div>
 
 		<?php if (have_posts()) : ?>
 
