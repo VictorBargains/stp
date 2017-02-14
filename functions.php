@@ -75,6 +75,11 @@ function podcast_extension_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'podcast_extension_scripts' );
 
+/** Increase number of episodes in podcast feed **/
+add_filter( 'ssp_feed_number_of_posts', 'ssp_modify_number_of_posts_in_feed' );
+function ssp_modify_number_of_posts_in_feed ( $n ) {
+  return 50; // Where 25 is the number of episodes that you would like to include in your RSS feed
+}
 
 /** Change 'Speaker(s)' to 'Contributor(s)' **/
 
