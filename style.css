@@ -83,6 +83,23 @@ Template: 	simple-bootstrap
     max-width: 354px;
 }
 */
+.sp-widget-post-slider-section .slick-arrow {
+    height: 50px;
+    width: 50px;
+    opacity: 20%;
+}
+.sp-widget-post-slider-section .slick-arrow.slick-prev{
+	left: -80px;
+}
+.sp-widget-post-slider-section .slick-arrow.slick-next{
+	right: -80px;
+}
+.sp-widget-post-slider-section:hover .slick-arrow.slick-prev{
+	left: 20;
+}
+.sp-widget-post-slider-section:hover .slick-arrow.slick-next{
+	right: 20;
+}
 .widget-post-slider .wps-caption {
     bottom: inherit;
     top: 0;
