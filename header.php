@@ -16,6 +16,10 @@
 	<div id="content-wrapper">
 
 		<header>
+            <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ?>
+            <span class="header-share" style="position: absolute; top: 10px; right: 40px; z-index: 10000; font-size: 15px; color: #fff;">
+    <?php ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true, 'buttons' => 'universal', 'title' => 'Share' ) ); ?>
+            </span><?php } ?>
 <?php
 /**
  * Detect plugin. For use on Front End only.
@@ -55,9 +59,6 @@ if ( is_plugin_active( 'my-bootstrap-menu/my-bootstrap-menu.php' ) ) { ?>
 				</div>
 			</nav>
             <?php } ?>
-            <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { 
-    ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true, 'buttons' => 'universal', 'title' => 'Share' ) );
-            } ?>
 		</header>
 
         <?php if (has_header_image()): ?>
