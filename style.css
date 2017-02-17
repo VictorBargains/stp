@@ -86,7 +86,7 @@ Template: 	simple-bootstrap
 .sp-widget-post-slider-section .slick-arrow {
     height: 50px;
     width: 50px;
-    opacity: 20%;
+    font-size: 300%;
 }
 .sp-widget-post-slider-section .slick-arrow.slick-prev{
 	left: -80px;
@@ -95,10 +95,10 @@ Template: 	simple-bootstrap
 	right: -80px;
 }
 .sp-widget-post-slider-section:hover .slick-arrow.slick-prev{
-	left: 20;
+	left: 15px;
 }
 .sp-widget-post-slider-section:hover .slick-arrow.slick-next{
-	right: 20;
+	right: 15px;
 }
 .widget-post-slider .wps-caption {
     bottom: inherit;
