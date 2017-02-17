@@ -74,6 +74,19 @@ Template: 	simple-bootstrap
 .widget {
     margin-bottom: 20px;
 }
+
+/** Header Share Menu (AddToAny) **/
+header .header-share {
+    position: absolute; 
+    top: 12px; 
+    right: 10px; 
+    z-index: 10000; 
+}
+header .header-share .add-to-any-list a {
+    font-size: 15px; 
+    color: #fff;
+}
+
 /** WIDGET POST SLIDER **/
 .widget_sp_widget_post_slider {
     margin-bottom: 0px;

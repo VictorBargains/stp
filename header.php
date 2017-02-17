@@ -17,7 +17,7 @@
 
 		<header>
             <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ?>
-            <span class="header-share" style="position: absolute; top: 10px; right: 40px; z-index: 10000; font-size: 15px; color: #fff;">
+            <span class="header-share">
     <?php ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true, 'buttons' => 'universal', 'title' => 'Share' ) ); ?>
             </span><?php } ?>
 <?php
