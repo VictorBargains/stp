@@ -73,7 +73,7 @@ $items = '<div id="menu-item-share" class="btn-group  menu-item menu-item-type-c
 $args = array(
     'theme_location' => 'main_nav'
 );
-apply_filters( 'wp_nav_menu_items', string $items, stdClass $args )
+apply_filters( 'wp_nav_menu_items', $items, $args )
     
 
 
