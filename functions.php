@@ -63,6 +63,19 @@ function sticky_widgets_init() {
 }
 add_action( 'widgets_init', 'sticky_widgets_init' );
 
+/** Adding share menu **/
+$items = '<div id="menu-item-share" class="btn-group  menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-share dropdown" role="group"><a title="Share..." data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class=" btn btn-default dropdown-toggle">Share<span class="caret dropdown-toggle"></span> </a>
+<ul role="menu" class="dropdown-menu ">	<li id="menu-item-share-copy-link" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-share-copy-link"><a title="Copy Link" href="javascript:copyToClipboard(window.location.href);return false;" tabindex="-1">About</a></li>
+	<li id="menu-item-share-email" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-share-email"><a title="Email Link" href="javascript:emailLink(window.location.href);return false;" tabindex="-1">Email Link</a></li>
+	<li id="menu-item-share-facebook" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-facebook"><a title="Facebook" href="facebookShare(window.location.href);return false;" tabindex="-1">Facebook</a></li>
+</ul>
+</div>';
+$args = array(
+    'theme_location' => 'main_nav'
+);
+apply_filters( 'wp_nav_menu_items', string $items, stdClass $args )
+    
+
 
 function podcast_extension_scripts() { 
     // For child themes
