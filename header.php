@@ -55,12 +55,9 @@ if ( is_plugin_active( 'my-bootstrap-menu/my-bootstrap-menu.php' ) ) { ?>
 				</div>
 			</nav>
             <?php } ?>
-            <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_FLOATING' ) ) {
-    ADDTOANY_SHARE_SAVE_FLOATING( array(
-        'kit_style' => 'right: 0px; top: 10px; margin-right: 36px;',
-        'horizontal_type' => true,
-    ) );
-} ?>
+            <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { 
+    ADDTOANY_SHARE_SAVE_KIT( array( 'use_current_page' => true, 'buttons' => 'universal', 'title' => 'Share' ) );
+            } ?>
 		</header>
 
         <?php if (has_header_image()): ?>
