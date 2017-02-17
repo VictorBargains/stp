@@ -75,16 +75,8 @@ Template: 	simple-bootstrap
     margin-bottom: 20px;
 }
 
-/** Header Share Menu (AddToAny) **/
-header .header-share {
-    position: absolute; 
-    top: 12px; 
-    right: 10px; 
-    z-index: 10000; 
-}
-header .header-share .add-to-any-list a {
-    font-size: 15px; 
-    color: #fff;
+header .container-fluid {
+    padding-left: 0px;
 }
 
 /** WIDGET POST SLIDER **/
