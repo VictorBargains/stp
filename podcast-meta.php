@@ -25,5 +25,10 @@
         </li>
         <?php endif; ?>
         <?php edit_post_link(__( 'Edit', "simple-bootstrap"), '<li><span class="glyphicon glyphicon-pencil"></span> ', '</li>'); ?>
-      
+<?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ?>
+    <li><?php ADDTOANY_SHARE_SAVE_KIT( array( 
+        'buttons' => array( 'universal' ),
+    ) );
+    ?></li>
+<?php } ?>      
     </ul>
